@@ -1,25 +1,97 @@
-Week 1 Assignment 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" , initial-scale=1.0">
+    <title> POSTING FILES TO GITHUB  </title>
+</head>
+<body>
+<main>
+    <article>
+        <header>
+            <h1> PUSHING FILES TO GITHUB </h1>
+        </header>
+        <p>This is a guide on how to push a files to Github. This guide will take use the examole of a markdown text file.  </p>
+        <p> The procedure will be broken down into the following steps: </p>
+        <ol>
+            <li> Create first-assignment folder with a text file assignment.md </li>
+            <li> Create a Github repository  </li>
+            <li> Push folder to Github using Git bash (commandline).  </li>
+        </ol>
+    
+        <h2> Create and Save a Text File:  </h2>
+        <p> Text files can be created with any text editor like Notepad, Notepad++, Sublime text, Visual Studio Code and lots more. The text file in this example is a Markdown text file which is save with the .md file extension (i.e textfile.md). </p> 
+        <p> To create your text file open your text editor and save the text file as 'assignment.md' in a folder named first-assignment. </p>
+        
+        <h2>  Create a Github Repository </h2>
+        <p> To create a Github repository, note that you must have <a href="https://github.com/join"> signed up </a>  and have an existing account on github.com and you must also be <a href="https://github.com/login"> logged in </a>. </p>
+            <ul>
+                <li> Click on the 'New" icon as shown below  
+                    <figure>
+                        <img src="images/new-repository.jpg" alt="A screenshot showing the 'New' button to create a new repository">
+                        <figcaption> The button opens up a form field to be filled   </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    Fill the field shown below 
+                    <figure>
+                        <img src="images/repository-name-and-description.png" alt="A new repository form to name the repo ">
+                        <figcaption> Fill the form by entering the details of the repository </figcaption>
+                        <p>Name your new repository and set a possibly initialize a Readme.md file to be added to your repository</p>
+                        <br>
+                        <img src="images/repository-name-and-description.png" alt="repository name and description field ">
+                        <figcaption> <strong> Note </strong>that the repository name should not have any space in-between words, use "-" or "_" symbol instead. GitHub will automatically add the "-" symbol if you forget to do so. </figcaption>
+                    </figure>
+                    <p> There should be a description giving a background story or an insight to the content of the repository.
+                        Choose whether it should be a Public repository(i.e visible to others) or Private (i.e visible to you alone). 
+                    </p>
+                    <p> You can choose to add a Readme.md File which will contain what you have filled in the description above. 
+                        Alternatively (which I recommnend) you can chosse not to add a Readme file yet.  
+                        <br>
+                        (**Note:A ReadMe.md file can be added afterwards** ) 
+                        <br>
+                        Click "create repository". If you leave the 'initiate Readme.md' unchecked then  you should be seeing a screen that carries the necessary git commands for you to follow.  
+                    </p>
+                </li>
+            </ul>
 
-You are to attempt 20 HTML Quiz Questions and Complete a coding challenge.
+            <h2> Push folder to Github using Git bash (commandline) </h2>
+            <p> To do this successfully you need to have installed GitBash command line on your PC. If you don't have it, click <a href="https://git-scm.com/downloads"> download</a>  to install it. </p> 
+            <p> Open GitBash and navigate to your project folder or right-click inside the GitHub project and select "GitBash here" to open GitBash while working from that directory.  </p>
+            <p> Enter the following commands:  </p>
+            <pre>
+                    > git init   
+                    > git add  
+
+            </pre>
+
+            <p> This stages everything in the folder and subfolders  </p>
+            <pre>
+                > git commit -m "commit message"  
+            </pre>
+            <p> This applies the changes.  
+                <br>
+            If this is your first time using GitBash you will need to set your name and email  
+            </p>
+            <pre>
+                > git config --global user.name "John Doe"  
+                > git config --global user.email johndoe@example.com  
+                > git remote add origin <git repository link ending with .git>  
+                > git push -u origin master  
+            </pre>
+            <p> Reload the page </p>
+            <p><strong> Congratulations on your first push to GitHub </strong></p>
+    <footer>
+        <p> Join our community <a href="pages/register.html">here</a> to receive more of these updaates and be involved in study sessions. </p>
+        <p> Take a quick glace at our study <a href="pages/timetable.html">timetable</a> </p>
+        <p> &copySmatTechies2021 </p>
+    </footer>
+    
+
+    </article> 
+</main>
 
 
-Coding challenge information
-
-Make a blog page showing Title on browser tab, Title of the post and author, add pictures and in the paragraph express your understanding of HTML and your review of the class.
-
-Link the blog page to a registration form showing Name, Email, DOB and Gender with placeholders in each fields with a submit button.
-
-Link both pages to a page showing a study timetable in table structure.
-
-Create a folder containing your code files and push to Github.
-
-
-Note: Styling/CSS isn't allowed!
-
-Total Score: 70 
-
-
-Assignment Submission Link
-
-
-Deadline: Sunday 2nd May, 11:59pm.
+</body>
+</html>
